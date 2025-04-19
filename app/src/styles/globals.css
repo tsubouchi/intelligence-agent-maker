@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-rgb: 255, 255, 255;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-4 py-2 bg-primary text-secondary border border-primary;
+  }
+  
+  .btn-outline {
+    @apply px-4 py-2 bg-secondary text-primary border border-primary;
+  }
+  
+  .input-field {
+    @apply w-full px-4 py-2 border border-border bg-secondary;
+  }
+  
+  .card {
+    @apply p-6 border border-border bg-secondary;
+  }
+} 
