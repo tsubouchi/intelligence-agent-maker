@@ -20,6 +20,15 @@ export default function Header() {
           AutoSpec Generator
         </Link>
 
+        <div className="hidden md:flex items-center space-x-6">
+          <Link href="/library" className="hover:underline">
+            ライブラリ
+          </Link>
+          <Link href="/archives" className="hover:underline">
+            マイアーカイブ
+          </Link>
+        </div>
+
         <div className="flex items-center space-x-4">
           {isLoggedIn ? (
             <>

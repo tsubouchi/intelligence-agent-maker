@@ -5,10 +5,21 @@ npm-debug.log
 # Environment variables
 .env
 .env.local
+.env.development
+.env.production
+
+# Secrets
+key.json
+*.key
+*.pem
+*.crt
+*.cer
+*.p12
 
 # Generated files
 dist/
 build/
+.next/
 
 # Logs
 logs/
@@ -23,3 +34,10 @@ Thumbs.db
 .vscode/
 *.swp
 *.swo
+
+# Supabase
+.supabase/
+
+# Temporary files
+*.tmp
+*~

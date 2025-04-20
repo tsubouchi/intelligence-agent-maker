@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AutoSpec Generator</title>
+  <meta name="google-signin-client_id" content="1024909768846-compute@developer.gserviceaccount.com">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    button {
+      background-color: #4285F4;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    #userInfo {
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #f1f1f1;
+      border-radius: 4px;
+      min-height: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>AutoSpec Generator</h1>
+  <p>AIが高品質な開発仕様書を自動生成するアプリケーション</p>
+  
+  <div>
+    <button id="loginButton" onclick="login()">Google アカウントでログイン</button>
+    <div id="userInfo"></div>
+  </div>
+
+  <script type="module" src="firebase-auth.js"></script>
+</body>
+</html>
